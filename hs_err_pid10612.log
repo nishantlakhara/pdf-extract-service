@@ -1,0 +1,36 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007fffc1d67d73, pid=10612, tid=17708
+#
+# JRE version: Java(TM) SE Runtime Environment 18.9 (11.0.12+8) (build 11.0.12+8-LTS-237)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM 18.9 (11.0.12+8-LTS-237, mixed mode, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x367d73]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.3\lib\idea_rt.jar=58937:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.1.3\bin -Dfile.encoding=UTF-8 com.microservices.arch.async.pdfextractservice.PdfExtractServiceApplication
+
+Host: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz, 8 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1348)
+Time: Mon Nov 29 18:15:03 2021 India Standard Time elapsed time: 602.988007 seconds (0d 0h 10m 2s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002155b7f1000):  JavaThread "http-nio-8083-exec-130" daemon [_thread_in_vm, id=17708, stack(0x000000ef8bf00000,0x000000ef8c000000)]
+
+Stack: [0x000000ef8bf00000,0x000000ef8c000000],  sp=0x000000ef8bff8ec0,  free space=995k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x367d73]
+V  [jvm.dll+0x617cc2]
+V  [jvm.dll+0x367ace]
+V  [jvm.dll+0x6e7ae5]
+V  [jvm.dll+0x6e9cfe]
+V  [jvm.dll+0x6ec18f]
+V  [jvm.dll+0x3d854f]

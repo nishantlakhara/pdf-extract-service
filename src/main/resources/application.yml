@@ -1,0 +1,37 @@
+server:
+  port: 8083
+  tomcat:
+    threads:
+      max: 100
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  #      file-size-threshold: 1KB
+  application:
+    name: pdf-extract-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#        exclude: "env,beans"
+
+pdf-text-service:
+  output-pdf-dir: D:/output_2
+  output-text-dir: D:/output_2/text
+  thread-pool-executor:
+    corePoolSize: 20
+    maxPoolSize: 20
+    queueCapacity: 1000
+    threadNamePrefix: pdfBoxThread-
+  enable-multithreading-pdfbox: false
+  forceReRun: true
+
+#eureka:
+#  instance:
+#    hostname: localhost
+

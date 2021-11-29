@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+hs_err**
+
+mvnw
+
+mvnw.cmd
+
+replay_pid**

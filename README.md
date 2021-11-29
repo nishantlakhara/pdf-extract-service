@@ -85,24 +85,4 @@ There are more cases like not found and no content.
 Please refer rest api for that.
 Please mail me on nishant.lakhara.280389@gmail.com for any explanation or queries.
 
-Testing:
---------
-
-Using Jmeter Thread Group
-
-1. Tested with 500 concurrent threads with average pdf size of 2MB.
-   Fast and works with 50 thread pool size.
-2. Tested with 500 concurrent threads with average pdf size 20MB.
-   Slower than point 1 and work with 20 thread pool size.
-   
-   Note: If I increase thread pool size, due to machine power i.e my PC,
-   it runs out of resources for case 2.
-
-
-   
-   
-
-
-
-
     

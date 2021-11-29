@@ -7,6 +7,9 @@ Steps to run:
    https://hazelcast.com/open-source-projects/downloads/
    Download the zip version of file.
    
+   Note: The purpose of using the hazelcast distributed cache was to store the status of the currently processed file across the multiple instances of the same code base i.e sharing across multiple tomcat instances.
+   
+   Also the hazelcast cache supports synchronization like in a ConcurrentHashMap.
 
 2. Unzip it. Run the hazelcast caching server using the script 
    bin/start.bat
